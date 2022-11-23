@@ -14,7 +14,7 @@ pipeline {
     environment {
         AWS_ACCESS_KEY = credentials('aws_access_key')
         AWS_SECRET_KEY = credentials('aws_secret_key')
-        ARTIFACTID = readMavenPom().getArtifactId()
+        ARTIFACTID = readMavenPom().getArtifactId() // Need to install Build Pileline step plugin in Jenkins
         VERSION = readMavenPom().getVersion()
         //  ARTIFACTID = 'bermtec'
        // VERSION = '1.0.1'
