@@ -2,7 +2,7 @@ package com.example.bermtec;
 
 
 public class GreetingController {
-    public String greeting() {
-        return "Please Welcome Aboard ";
+    public String greeting(string input) {
+        return "Please Welcome Aboard " + input;
     }
 }
